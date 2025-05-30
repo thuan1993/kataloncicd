@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC5_TestCommitFeatureBranch</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ac8819d4-4bb4-47ca-9483-3ea555cc04d5</testCaseGuid>
+</TestCaseEntity>
