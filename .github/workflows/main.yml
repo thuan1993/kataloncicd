@@ -1,0 +1,26 @@
+name: Run Katalon Tests with Runtime Engine
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  run-katalon-tests:
+    runs-on: self-hosted  # Your Windows self-hosted runner
+    steps:
+      # Step 1: Checkout the repository code
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Verify Katalon Runtime Engine exists
+      - name: Verify Katalon Runtime Engine
+        run: dir "C:\Users\khanh\Downloads\katalon-runtime-engine"
+        shell: cmd
+
+      # Step 3: Run Katalon Test Suite Collection
+      - name: Run Katalon Tests
+        run: |
+          "C:\Users\khanh\Downloads\katalon-runtime-engine\katalonc.exe" -noSplash -runMode=console -projectPath="${{ github.workspace }}\kataloncicd.prj" -testSuiteCollectionPath="Test Suites/The First TS Collection" -retry=0 -apiKey="${{ secrets.KATALON_API_KEY }}" -orgID="${{ secrets.KATALON_ORG_ID }}" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true
+        shell: cmd
