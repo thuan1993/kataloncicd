@@ -40,5 +40,5 @@ WebUI.click(findTestObject('Object Repository/LoginPage/Page_Customer Login/span
 WebUI.verifyElementVisible(findTestObject('LoginPage/Page_Home Page/span_Welcome, Thuan Dinh', [('firstName') : firstName
             , ('lastName') : lastName]))
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
