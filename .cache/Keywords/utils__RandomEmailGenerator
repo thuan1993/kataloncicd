@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "40291FC432D16D5ED5F512B09AAD4650",
+  "keywordClasses": [
+    {
+      "name": "utils.RandomEmailGenerator",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

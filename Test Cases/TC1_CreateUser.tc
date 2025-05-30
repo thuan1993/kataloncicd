@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Open browser: https://magento.softwaretestingboard.com/&#xd;
+Create new user</description>
+   <name>TC1_CreateUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df1b4226-9807-40c2-b5c4-9c549b7a2f6a</testCaseGuid>
+</TestCaseEntity>
